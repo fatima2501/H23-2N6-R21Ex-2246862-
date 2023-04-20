@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AppCompteurHydro
 {
-    public class CompteurHydro : ICompteurHydro
+    public class CompteurHydro : ICompteurHydro 
     {
 		
 		private int m_consommationActuelle;
@@ -25,7 +25,7 @@ namespace AppCompteurHydro
 		
 		public void Consommer(int pQuantitéKwh)
         {
-            m_consommationActuelle -= pQuantitéKwh;
+            m_consommationActuelle += pQuantitéKwh;
         }
     }
 }
